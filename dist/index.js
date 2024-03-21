@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
 const answer = await inquirer.prompt([
-    { Message: "Enter your first number", type: "number", name: "firstNumber" },
+    { Message: "Enter first number", type: "number", name: "firstNumber" },
     { message: "Enter second number", type: "number", name: "secondNumber" },
     {
         message: "select one of the operator to perform operation",
@@ -27,3 +27,4 @@ else if (answer.operator === "Division") {
 else {
     console.log("please select valid operator");
 }
+console.log("THE END");
